@@ -1,0 +1,25 @@
+.counter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Button{
+    height: 30px;
+    letter-spacing: 0.5px;
+    background-color: #ffc107;
+
+    border: none;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.Number{
+    margin: 15px 10px 15px 10px;
+}
