@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/React-DiazNahuel/static/css/main.c91b404e.css",
-    "main.js": "/React-DiazNahuel/static/js/main.edd088b1.js",
+    "main.css": "/React-DiazNahuel/static/css/main.5f863b60.css",
+    "main.js": "/React-DiazNahuel/static/js/main.86e819e6.js",
     "static/js/787.dcc73137.chunk.js": "/React-DiazNahuel/static/js/787.dcc73137.chunk.js",
-    "static/media/Carrito.svg": "/React-DiazNahuel/static/media/Carrito.514aafa09c423b021450accd57431ccb.svg",
+    "static/media/Carrito.svg": "/React-DiazNahuel/static/media/Carrito.ff3263da6d59d6e91169c9faf3d4e7a7.svg",
     "index.html": "/React-DiazNahuel/index.html",
-    "main.c91b404e.css.map": "/React-DiazNahuel/static/css/main.c91b404e.css.map",
-    "main.edd088b1.js.map": "/React-DiazNahuel/static/js/main.edd088b1.js.map",
+    "main.5f863b60.css.map": "/React-DiazNahuel/static/css/main.5f863b60.css.map",
+    "main.86e819e6.js.map": "/React-DiazNahuel/static/js/main.86e819e6.js.map",
     "787.dcc73137.chunk.js.map": "/React-DiazNahuel/static/js/787.dcc73137.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c91b404e.css",
-    "static/js/main.edd088b1.js"
+    "static/css/main.5f863b60.css",
+    "static/js/main.86e819e6.js"
   ]
 }
