@@ -1,23 +1,27 @@
+import style from './Item.module.css'
+
+
 
 const Item = ({id, nombre, imagen, precio, detalle}) => {
+    console.log(imagen)
     return (
-        <article className="cardItem">
-            <h2 className="ItemNombre">
+        <article className={style.cardItem}>
+            <h2 className={style.itemNombre}>
                 {nombre}
             </h2>
             <picture>
-                <img src= {imagen} alt={nombre} className="itemImg"/>
+                <img src= {imagen} alt={nombre} className={style.itemImg}/>
             </picture>
             <div>
-                <p className="info">
+                <p className={style.info}>
                     Precio: {precio}
                 </p>
-                <p className="info">
+                <p className={style.info}>
                     Detalle: {detalle}
                 </p>
             </div>
-            <footer className="itemFooter">
-                <button className="option">Ver detalle</button>
+            <footer className={style.itemFooter}>
+                <button className={style.option}>Ver detalle</button>
             </footer>
         </article>
     )

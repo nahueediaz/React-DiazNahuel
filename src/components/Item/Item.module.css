@@ -1,0 +1,39 @@
+.cardItem{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 27, 27);
+    width: 21rem;
+    padding: 18px;
+    margin: 12px;
+    border-radius: 58px;
+    height: 500px;
+}
+
+.itemNombre{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.itemImg{
+    height: 250px;
+    border-radius: 100px
+}
+
+.info{
+    text-align: justify;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.itemFooter{
+    text-align: center;
+}
+
+.option{
+    height: 30px;
+    width: 100px;
+    letter-spacing: 0.5px;
+    background-color: #ffc107;
+    border: none;
+    border-radius: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

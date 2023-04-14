@@ -1,6 +1,14 @@
+.App{
+  background-color: black;
+}
+
 .barraNav{
   background-color: rgb(0, 0, 0);
-
+  border-color: #ffc107;
+  border-style: solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
 }
 
 .Container-nav{
