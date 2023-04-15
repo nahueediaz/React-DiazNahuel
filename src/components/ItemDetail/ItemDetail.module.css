@@ -28,13 +28,3 @@
 .itemFooter{
     text-align: center;
 }
-
-.option{
-    height: 30px;
-    width: 100px;
-    letter-spacing: 0.5px;
-    background-color: #ffc107;
-    border: none;
-    border-radius: 15px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}

@@ -1,8 +1,7 @@
+import { Link } from 'react-router-dom'
 import style from './Item.module.css'
 
-
-
-const Item = ({id, nombre, imagen, precio, detalle}) => {
+const Item = ({id, nombre, imagen, precio, detalle,stock}) => {
     console.log(imagen)
     return (
         <article className={style.cardItem}>
@@ -19,9 +18,12 @@ const Item = ({id, nombre, imagen, precio, detalle}) => {
                 <p className={style.info}>
                     Detalle: {detalle}
                 </p>
+                <p className={style.info}>
+                    Stock: {stock}
+                </p>
             </div>
             <footer className={style.itemFooter}>
-                <button className={style.option}>Ver detalle</button>
+                <Link to= {`/Item/${id}`} className={style.option}>Ver detalle</Link>
             </footer>
         </article>
     )
