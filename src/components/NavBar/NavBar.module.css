@@ -1,0 +1,58 @@
+.barraNav{
+    background-color: rgb(0, 0, 0);
+    border-color: #ffc107;
+    border-style: solid;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Container-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tittleNav{
+    text-decoration: none;
+    color: #ffc107;
+    font-size: 25px;
+    margin-left: 10px;
+    padding-left: 20px;
+    white-space: nowrap;
+    letter-spacing: 1.5px;
+}
+
+.Categories{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: space-evenly;
+    margin: 10px;
+}
+
+.navOption {
+    text-decoration: none;
+    color: rgba(255, 255, 255, .5);
+    margin: 15px; 
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+
+
+.carrito{
+    font-size: 25px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar.active {
+    background-color: #333;
+    color: #fff;
+  }

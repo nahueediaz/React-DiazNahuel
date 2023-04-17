@@ -1,12 +1,13 @@
 .cardItem{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 27, 27);
+    background-color: blanchedalmond;
     width: 21rem;
     padding: 18px;
     margin: 12px;
     border-radius: 58px;
-    height: 500px;
+    box-shadow: 8px -8px 8px white;
+    height: 550px;
 }
 
 .itemNombre{
@@ -27,14 +28,24 @@
 
 .itemFooter{
     text-align: center;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    
 }
 
 .option{
-    height: 30px;
+    text-decoration: none;
+    color: black;
+    height: 20px;
     width: 100px;
     letter-spacing: 0.5px;
     background-color: #ffc107;
     border: none;
     border-radius: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.option:hover{
+    background-color: wheat;
 }

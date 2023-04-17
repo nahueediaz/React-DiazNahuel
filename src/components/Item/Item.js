@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
 import style from './Item.module.css'
+import React from 'react'
 
 const Item = ({id, nombre, imagen, precio, detalle,stock}) => {
-    console.log(imagen)
+
     return (
         <article className={style.cardItem}>
             <h2 className={style.itemNombre}>

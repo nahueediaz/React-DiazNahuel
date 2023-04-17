@@ -1,9 +1,9 @@
 import logo from '../Assets/Carrito.svg'
-import '../../../App.css'
+import style from '../NavBar.module.css'
 
 const CartWidget = () => {
     return (
-        <div  className="carrito">
+        <div  className={style.carrito}>
             <img src= {logo }/>
                 0
         </div> 

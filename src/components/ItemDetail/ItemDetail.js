@@ -1,8 +1,17 @@
+import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import style from "./ItemDetail.module.css"
+import { Link } from "react-router-dom";
 
-const ItemDetail =( {id, nombre, category, precio, detalle, imagen, stock}) => {
-    return(
+const ItemDetail = ({id, category, nombre, imagen, precio, detalle,stock}) => {
+
+    const [quantityAdd, setQuantityAdd] = useState(0)
+
+    const hanledAdd = (quantity) =>{
+        setQuantityAdd(quantity)
+    }
+
+    return (
         <article className={style.cardItem}>
             <header>
                 <h2 className={style.itemNombre}>{nombre}</h2>
@@ -16,7 +25,11 @@ const ItemDetail =( {id, nombre, category, precio, detalle, imagen, stock}) => {
                 <p className={style.info}>Precio: ${precio}</p>
             </section>
             <footer>
-            <ItemCount initial= {1} stock= {stock} onAdd={(quantity) => console.log('cantidad agregada', quantity)}/>
+                {quantityAdd > 0 ? (
+                <Link to={'/cart'}>Terminar compra</Link>) : (
+                    <ItemCount initial= {1} stock= {stock} onAdd={hanledAdd}/>
+                )
+            }
             </footer>
         </article>
     )
