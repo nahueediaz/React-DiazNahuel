@@ -13,7 +13,7 @@ const ItemDetail = ({id, category, nombre, imagen, precio, detalle,stock}) => {
                 <img src={imagen} alt={nombre} className={style.itemImg}/>
             </picture>
             <section>
-                <p className={style.info}>Categoria: {category} </p>
+                <p className={style.info}>Stock: {stock} </p>
                 <p className={style.info}>Descripcion: {detalle}</p>
                 <p className={style.info}>Precio: ${precio}</p>
             </section>

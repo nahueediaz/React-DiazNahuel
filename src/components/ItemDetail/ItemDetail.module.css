@@ -1,12 +1,11 @@
 .cardItem{
     display: flex;
     flex-direction: column;
-    background-color: rgb(255, 27, 27);
+    background-color: blanchedalmond;
     width: 21rem;
     padding: 18px;
     margin: 12px;
     border-radius: 58px;
-    height: 500px;
 }
 
 .itemNombre{

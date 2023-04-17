@@ -24,11 +24,21 @@ export const getProducts = () => {
     })
 }
 
-export const getProductsById = (productId) => {
-    return new Promise ((resolve) => {
-        setTimeout (() => {
-            resolve(products.find (prod => prod.id ===  (productId)))
-        },500)
+//export const getProductsById = (productId) => {
+  //  return new Promise ((resolve) => {
+    //    setTimeout (() => {
+      //      resolve(products.find (prod => prod.id ===  (productId)))
+        //},500)
+    //})
+//}
+export const getProductsById = async (productId) =>{
+    return new Promise ((resolve) =>{
+        setTimeout(() => {
+            const filteredProduct = products.find((prod) =>
+                prod.id === parseInt(productId)
+            )
+            resolve (filteredProduct)
+        }, 500)
     })
 }
 

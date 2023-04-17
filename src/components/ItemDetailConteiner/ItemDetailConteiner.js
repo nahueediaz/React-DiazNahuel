@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react'
 import { getProductsById } from '../ListProduct/ListProducts'
 import { useParams } from 'react-router-dom'
 import ItemDetail from '../ItemDetail/ItemDetail'
+import style from './ItemDetailConteiner.module.css'
 
 const ItemDetailConteiner = () =>{
 
@@ -22,7 +23,7 @@ const ItemDetailConteiner = () =>{
     }, [itemId])
 
     return(
-        <div>
+        <div className= {style.detailCont}>
             <ItemDetail {...products}/>
         </div>
     )
