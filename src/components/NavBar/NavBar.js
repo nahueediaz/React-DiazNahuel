@@ -6,7 +6,7 @@ import Style from './NavBar.module.css'
 const NavBar = () => {
     return (
         <nav className={Style.barraNav}>
-            <Link to= '/' className={Style.navOption}>
+            <Link to= '/React-DiazNahuel' className={Style.navOption}>
                 <h3 className={Style.tittleNav}>Kiro Hamburgueseria</h3>
             </Link>
                 <div className={Style.Categories}>

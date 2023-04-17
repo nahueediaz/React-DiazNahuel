@@ -1,7 +1,5 @@
-import { useState } from "react";
 import ItemCount from "../ItemCount/ItemCount";
 import style from "./ItemDetail.module.css"
-import { Link } from "react-router-dom";
 
 const ItemDetail = ({id, category, nombre, imagen, precio, detalle,stock}) => {
 
@@ -20,7 +18,8 @@ const ItemDetail = ({id, category, nombre, imagen, precio, detalle,stock}) => {
                 <p className={style.info}>Precio: ${precio}</p>
             </section>
             <footer>
-                    <ItemCount initial= {1} stock= {stock} onAdd={(quantity)}/>
+                    <ItemCount initial= {1} stock= {stock} onAdd={(quantity) => console.log('Cantidad agregada', quantity)
+                    }/>
             </footer>
         </article>
     )
