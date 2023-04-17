@@ -5,11 +5,6 @@ import { Link } from "react-router-dom";
 
 const ItemDetail = ({id, category, nombre, imagen, precio, detalle,stock}) => {
 
-    const [quantityAdd, setQuantityAdd] = useState(0)
-
-    const hanledAdd = (quantity) =>{
-        setQuantityAdd(quantity)
-    }
 
     return (
         <article className={style.cardItem}>
@@ -25,11 +20,7 @@ const ItemDetail = ({id, category, nombre, imagen, precio, detalle,stock}) => {
                 <p className={style.info}>Precio: ${precio}</p>
             </section>
             <footer>
-                {quantityAdd > 0 ? (
-                <Link to={'/cart'}>Terminar compra</Link>) : (
-                    <ItemCount initial= {1} stock= {stock} onAdd={hanledAdd}/>
-                )
-            }
+                    <ItemCount initial= {1} stock= {stock} onAdd={(quantity)}/>
             </footer>
         </article>
     )
