@@ -1,9 +1,34 @@
-.ListGroup{
-    width: 100%;
+.contListGroup{
+    display: flex;
     margin: 0;
     padding: 12px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+}
+
+.ListGroup{
+    display: flex;
+    flex-direction:row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin: 0;
+    padding: 12px;
+}
+
+.tittleItemList{
+    color: #ffc107;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.nameTittle{
+    color: black;
+    background-color: #ffc107;
+    font-size: 38px;
+    letter-spacing: 2px;
+}
+
+.nameTittle :hover{
+    background-color: blanchedalmond;
 }
